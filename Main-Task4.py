@@ -32,10 +32,7 @@ def is_prime(n):
            return False
    return True
 
-
-
-
-3. def find_primes_in_list(numbers):
+ def find_primes_in_list(numbers):
    return [num for num in numbers if is_prime(num)]
 
 
@@ -45,7 +42,7 @@ print(prime_numbers)
 
 
 
-4. Given a Python List [10,501,22,37,100,999,87,351] Find out how many numbers are there in the given Python List which are Happy numbers?
+3. Given a Python List [10,501,22,37,100,999,87,351] Find out how many numbers are there in the given Python List which are Happy numbers?
 def is_prime(n):
    if n < 2:
        return False
@@ -57,7 +54,7 @@ numbers = [10, 501, 22, 37, 100, 999, 87, 351]
 prime_numbers = [num for num in numbers if is_prime(num)]
 print("Prime Numbers:", prime_numbers)
 
-5. Write a python program to find the sum of the first and last digit of an integer
+4. Write a python program to find the sum of the first and last digit of an integer
 n= int(input("Enter the four digit number:"))
 sum= 0
 a=n//1000
@@ -66,7 +63,7 @@ a=n%10
 sum=sum+a
 print("Sum of First and Last digit=",sum)
 
-6. How can I use python to find all the ways to make Rs. 10 using Rs. 1, Rs. 2,Rs. 5, and Rs. 10 coins
+5. How can I use python to find all the ways to make Rs. 10 using Rs. 1, Rs. 2,Rs. 5, and Rs. 10 coins
 
 def count_ways(coins, target):
    dp = [0] * (target + 1)
@@ -80,7 +77,7 @@ target = 10
 print("Total ways to make Rs. 10:", count_ways(coins, target))
 
 
-7. You have been given three list. Your task is to find the duplicates in the three list write a python program for the same. You can use your own python lists 
+6. You have been given three list. Your task is to find the duplicates in the three list write a python program for the same. You can use your own python lists 
 
 a = [1, 2, 3, 4, 10]
 b = [2, 3, 5, 6, 10]
@@ -89,7 +86,7 @@ res = set(a).intersection(b, c)
 print(f"Common elements: {res}")
 
 
-8. Write a python program to find the first non- repeating elements in a given list of integers
+7. Write a python program to find the first non- repeating elements in a given list of integers
 
 list = [4, 8, 2, 8, 9,78]
 def nonrepeated(arr):
@@ -99,7 +96,7 @@ print(nonrepeated(list))
 
 
 
-9. Write a python program to find the minimum element in a rated and sorted list
+8. Write a python program to find the minimum element in a rated and sorted list
 
 def findMin(arr):
    res = arr[0]
@@ -116,7 +113,7 @@ if __name__ == "__main__":
 
 
 
-10. You have been given a python list [10,20,30,9] and a value of 59. Write a python program to find the triplet in the list whose sum is equal to the given value 
+9. You have been given a python list [10,20,30,9] and a value of 59. Write a python program to find the triplet in the list whose sum is equal to the given value 
 
 from itertools import combinations
 def findtriplet(lst, key):
@@ -129,7 +126,7 @@ lst = [10,20,30,9]
 print(findtriplet(lst,59))
 
 
-Given a list [4,4,-3,1,6] write a python program to find if there is a sub list with sum equal to zero
+10. Given a list [4,4,-3,1,6] write a python program to find if there is a sub list with sum equal to zero
 def subArray(arr, l):
    for i in range(l - 1):
        s = arr[i]
